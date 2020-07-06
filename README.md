@@ -11,6 +11,9 @@ This sample was adapted from the [IdentityModel.OidcClient.Samples](https://gith
 ## Getting Started
 
 To use this sample you need your K2 Tenant Identifier as well as your ClientId and SCIM Token for your SCIM instance.
+Replace these values in `appsettings.json`.
+
+For more information, refer to the K2 SCIM [documentation](https://k2.com/help/identity/scim).
 
 ### License
 
