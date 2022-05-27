@@ -67,8 +67,8 @@ namespace ConsoleClientWithBrowser
                 Scope = clientConfig.Scope,
                 FilterClaims = false,
                 Browser = browser,
-                Flow = OidcClientOptions.AuthenticationFlow.AuthorizationCode,
-                ResponseMode = OidcClientOptions.AuthorizeResponseMode.Redirect,
+                IdentityTokenValidator = new JwtHandlerIdentityTokenValidator(),
+                RefreshTokenInnerHttpHandler = new SocketsHttpHandler()
             };
 
             Serilog.Core.Logger serilog = new LoggerConfiguration()
